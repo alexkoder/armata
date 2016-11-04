@@ -1,0 +1,35 @@
+@import 'variables'
+
+.footer
+	position: relative
+
+	&::before
+		content: ''
+		position: absolute
+		left: 0
+		top: -6px
+		height: 6px
+		width: 100%
+		z-index: 50
+		background: url('img/bah_2.png') repeat-x
+
+	.top-line
+		min-height: auto
+		padding-top: 80px
+		padding-bottom: 58px
+		background: none
+	
+		.logo
+			opacity: .35
+		
+		.main-mnu
+			a
+				color: #c7c9cc
+	
+		.phone
+			opacity: 0.45
+
+#goToTop
+	height: 38px
+	background: url('img/top.png') no-repeat center center #1f2b3a
+	cursor: pointer

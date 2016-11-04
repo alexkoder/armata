@@ -1,0 +1,62 @@
+.section1
+	
+	.sect_content
+		background: url('img/s1_bg.png') no-repeat center 60px
+
+		&:before
+			content: ''
+			position: absolute
+			bottom: 0
+			left: 0
+			height: 260px
+			width: 100%
+			background-color: $bg-light-dark
+			z-imdex: -1
+
+		.bg_triangle
+			content: ''
+			position: absolute
+			bottom: 260px
+			left: 0
+			height: 100px
+			width: 100%
+			background: url('img/s1_triangle.svg') no-repeat center top
+			z-imdex: -1
+				
+		.s1_logo_img
+			width: 120px
+			bottom: 270px
+
+		.s1_scales_img
+			width: 160px
+			bottom: 315px
+
+		.s1_scales_img,
+		.s1_logo_img
+			position: absolute
+			display: block
+			left: 50%
+			transform: translate(-50%, 0)
+
+		.info_items_container
+			top: 50%
+
+		.info_item
+			p
+				padding-bottom: 20px
+				border-bottom: 1px solid $border-light-dark
+
+			&:nth-child(-n+5) p
+				color: $text-color-dark
+				border-bottom: 1px solid #dee1e5
+
+		.info_item_8
+			bottom: -370px
+
+		.info_item_4,
+		.info_item_5
+			top: -90px
+
+		.info_item_2,
+		.info_item_3
+			top: -290px

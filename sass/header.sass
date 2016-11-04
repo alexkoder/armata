@@ -1,0 +1,158 @@
+@import "bourbon"
+@import 'variables'
+@import 'general'
+
+.main-head
+	position: relative
+	min-height: 620px
+	background-size: cover
+	background-position: center
+	padding-bottom: 75px
+	&::before
+		@extend .before
+		background-color: #394b5f
+		opacity: .85
+	h1
+		text-transform: none
+
+.top-line
+	min-height: 160px
+	padding-top: 45px
+	background: url(img/top_gradient.png) repeat-x 0 0
+
+	.logo
+		img
+			height: $header-logo-height
+	
+	.main-mnu
+		font-size: em(14px, $base-font-size)
+		ul
+			@extend .ulmnu
+		
+		li
+			display: inline-block
+			line-height: $header-logo-height
+			padding: 0 8px		
+			&:first-child
+				padding-left: 0
+			
+			a
+				text-decoration: none
+				color: #fff
+				&.active, &:hover
+					color: $main-color
+					text-decoration: underline
+
+	.phone
+		font-family: RobotoBold, $helvetica
+		opacity: 0.9
+		color: #fff
+		font-size: em(20px, $base-font-size)
+		line-height: $header-logo-height
+		text-align: right
+		white-space: nowrap
+		float: right
+
+
+	.mnu-toggle 
+		float: right	
+		cursor: pointer
+		display: block
+		width: 28px
+		height: 30px
+		margin-left: 30px
+		margin-top: 10px
+		padding-top: 15px
+	
+	.mnu-toggle span:after,
+	.mnu-toggle span:before 
+		content: ""
+		position: absolute
+		left: 0
+		top: -9px
+	
+	.mnu-toggle span:after
+		top: 9px
+	
+	.mnu-toggle span 
+		position: relative
+		display: block
+	
+	.mnu-toggle span,
+	.mnu-toggle span:after,
+	.mnu-toggle span:before 
+		width: 100%
+		height: 2px
+		background-color: #fff
+		transition: all 0.3s
+		backface-visibility: hidden
+		border-radius: 2px
+	
+	.mnu-toggle.on span 
+	 background-color: transparent
+	
+	.mnu-toggle.on span:before 
+		transform: rotate(45deg) translate(5px, 5px)
+	
+	.mnu-toggle.on span:after 
+		transform: rotate(-45deg) translate(7px, -8px)
+
+
+.contact-form
+	background-color: transparentize(#243343, .2)
+
+.header-wrap
+	margin-top: 40px
+	
+
+.header-title
+	display: inline-block
+	margin-top: 117px
+	margin-bottom: 40px
+	padding-bottom: 4px
+	color: #fff
+	line-height: em(63px, 48px)
+	border-bottom: 8px solid $main-color
+
+.header-descr-list
+	@extend .ulmnu
+	margin-bottom: 80px
+	
+	li
+		margin-bottom: 10px
+
+	a
+		display: block
+		position: relative
+		font-family: RalewaySemiBold, $helvetica
+		font-size: em(18px, $base-font-size)
+		color: #fff
+		text-decoration: none
+		padding-left: 20px
+		&:hover, &:active
+			text-decoration: underline
+		&::before
+			content: ''
+			display: block
+			position: absolute
+			top: 0
+			bottom: 0
+			left: 2px
+			margin: auto 0
+			width: 6px
+			height: 11px
+			+triangle(12px 6px, $main-color, right)
+
+.arrow-wrap
+	text-align: center
+	position: relative
+	margin-top: 38px
+	
+	.arrow-down
+		display: inline-block
+		width: 40px
+		height: 40px
+		background: url('img/arrow_down.png') no-repeat 0 0
+		opacity: 0.7
+		&:hover
+			opacity: 1

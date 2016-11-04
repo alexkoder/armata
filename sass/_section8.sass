@@ -1,0 +1,57 @@
+@import 'variables'
+
+.section8
+	padding-bottom: 45px
+
+	.sect_header_wrap
+		text-align: left		
+		.sect_header
+			&::after
+				margin: 25px 0 25px
+
+	.contact-form
+		background-color: #ddd
+		color: #5e6267	
+		border-color: #828282
+		margin-bottom: 45px
+	
+		.form-title
+			color: $headers-color
+	
+		.form-label		
+			input
+				background-color: #c0c0c0
+				color: $text-color-dark !important
+				box-shadow: 0 -3px 0 #737373
+				&:focus
+					background-color: #dedede
+					box-shadow: 0 -6px 0 #737373	
+
+	.info_items_container
+		margin-top: 45px
+		margin-bottom: 20px
+
+		.info_item
+			text-align: center
+			padding-bottom: 25px
+			opacity: 0
+			transform: translateY(-25px)
+			transition: all 0.4s
+
+			&.on
+				opacity: 1
+				transform: translateY(0)
+
+			&.on:hover 
+				transform: translateY(-10px)
+
+			.s8_item_icon
+				display: block
+				height: 72px
+				margin: 0 auto
+
+			.s8_item_descr
+				padding-top: 25px
+				font-family: RalewayBold, $helvetica
+				font-size: em(13.1px, $base-font-size)
+				line-height: (16 / 13)

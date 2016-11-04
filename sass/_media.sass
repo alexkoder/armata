@@ -1,0 +1,301 @@
+@import 'variables'
+
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens <=1199 */
+@media only screen and (max-width : 1199px)
+	/**/
+	.top-line .main-mnu
+		display: none
+		position: absolute
+		z-index: 10
+		top: 10px
+		right: 15px	
+		min-width: 295px	
+		background-color: #1c242c	
+		border-bottom: #111821 4px solid
+		border-top: #232D3B 4px solid			
+		text-align: right
+		
+		ul
+			li
+				display: block
+				padding: 0
+			a
+				display: block
+				padding: 0 20px
+				font-size: em(14.1px, $base-font-size)
+				line-height: 48px
+				text-transform: uppercase
+				border-bottom: #222C36 1px solid
+
+				&:hover, &.active
+					background-color: #273646
+					text-decoration: none
+				&.active
+					font-family: RalewayBold, $helvetica					
+
+	.footer .top-line .main-mnu
+		position: relative
+		float: right
+		right: 0
+		ul
+			a
+				&:hover, &.active
+					background-color: $bg-light-dark
+
+	.section3,
+	.section1	
+		.sect_content			
+			.info_item_4
+				left: -470px
+			.info_item_5
+				right: -470px
+
+	.section5
+		.sect_content
+			.info_item:nth-last-child(1)
+				margin-left: 0
+
+
+/* Medium Devices, Desktops <=1100 */
+@media only screen and (max-width : 1100px)
+	.section1	
+		.sect_content
+			.info_item
+				width: 200px			
+			.info_item_4,
+			.info_item_2,
+			.info_item_6
+				left: -400px
+			.info_item_5,
+			.info_item_3,
+			.info_item_7
+				right: -400px
+
+
+/* Medium Devices, Desktops <=992 */
+@media only screen and (max-width : 992px)
+	/**/
+	.header-title
+		margin-top: 0
+
+	.main-head
+		padding-bottom: 50px
+
+	.arrow-wrap
+		margin-top: 50px
+
+	.section1	
+		.sect_content			
+			.info_item_4,
+			.info_item_2,
+			.info_item_6
+				left: -360px
+			.info_item_5,
+			.info_item_3,
+			.info_item_7
+				right: -360px
+
+	.section3
+		.sect_content
+			height: auto
+			background: none
+			padding: 50px 0 25px
+			margin-bottom: 0
+
+			.info_items_container
+				position: static
+				width: 100%
+				height: 100%
+
+			.folders_img_wrap
+				display: none
+
+			.info_item
+				position: static
+				transform: none
+				float: left
+				width: 30%
+				min-height: 170px
+				margin-right: 5%
+				margin-bottom: 20px
+				text-align: left
+				&:nth-child(3n)
+					margin-right: 0
+
+	
+	.section5
+		.sect_content
+			.info_item:nth-last-child(1)
+				margin-left: -45px
+			.info_item:nth-last-child(2)
+				margin-left: 0
+
+
+	.section8
+		.sect_header_wrap
+			text-align: center
+			.sect_header
+				&::after
+					margin: 25px auto 25px
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	
+	/*Disable Animation on Mobile Devices*/
+	.animated
+		/*CSS transitions*/
+		-o-transition-property: none !important
+		-moz-transition-property: none !important
+		-ms-transition-property: none !important
+		-webkit-transition-property: none !important
+		transition-property: none !important
+		/*CSS transforms*/
+		-o-transform: none !important
+		-moz-transform: none !important
+		-ms-transform: none !important
+		-webkit-transform: none !important
+		transform: none !important
+		/*CSS animations*/
+		-webkit-animation: none !important
+		-moz-animation: none !important
+		-o-animation: none !important
+		-ms-animation: none !important
+		animation: none !important
+
+	.section1
+		.sect_content
+			height: auto
+			padding: 60px 0 20px
+
+			&:before
+				height: 450px
+
+			.bg_triangle
+				bottom: 450px
+
+			.s1_logo_img
+				bottom: 460px
+				opacity: 0.6
+
+			.s1_scales_img
+				display: none
+
+			.info_items_container
+				position: static
+				width: 100%
+				height: 100%
+
+			.info_item
+				position: relative
+				transform: none
+				left: 0
+				right: 0
+				top: 0
+				bottom: 0
+				width: 100%
+				margin-bottom: 20px
+				text-align: left
+				margin-bottom: 50px
+
+				p
+					padding-bottom: 25px
+					font-size: em(16px, $base-font-size)
+
+				&:nth-child(5)
+					margin-bottom: 150px
+
+				&:last-child p
+					padding-bottom: 0
+					border-bottom: none
+
+	.section3
+		.sect_content
+			padding: 60px 0 20px
+
+			.info_item
+				float: none
+				width: 100%
+				min-height: auto
+				margin-right: 0
+				margin-bottom: 50px
+				
+				p
+					padding-bottom: 25px
+					font-size: em(16px, $base-font-size)
+					border-bottom: 1px solid $border-light-dark
+
+				&:last-child p
+					padding-bottom: 0
+					border-bottom: none				
+
+				
+/* Extra Small Devices, Phones <=580 */
+@media only screen and (max-width : 580px)
+	
+	.section5
+		.sect_content .info_items_container
+			.info_item
+				margin-left: 0
+
+
+/* Extra Small Devices, Phones <=480 */
+@media only screen and (max-width : 480px)
+	.top-line
+		.logo
+			img
+				height: $header-logo-height-xs
+		
+		.phone
+			font-size: em(16px, $base-font-size)
+			line-height: $header-logo-height-xs
+		
+		
+		.mnu-toggle
+			margin-top: 3px
+			padding-top: 15px
+			margin-left: 20px
+	
+		.section2
+			.sect_content
+				.info_item
+					width: 142px
+					padding: 0 10px
+
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens >=1200 */
+@media only screen and (min-width : 1200px)
+	/**/
+	.main-mnu
+		display: block !important
+

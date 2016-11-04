@@ -1,0 +1,128 @@
+@import 'variables'
+
+.homesect
+	position: relative
+	padding-top: 90px
+
+	&::before
+		content: ''
+		position: absolute
+		left: 0
+		top: -6px
+		height: 6px
+		width: 100%
+		z-index: 50
+		background: url('img/bah_1.png') repeat-x
+
+.sect_header_wrap	
+	text-align: center	
+
+	.sect_header
+		position: relative		
+		line-height: (36 / 30)
+
+		&::after
+			content: ''
+			display: block
+			width: 165px
+			height: 4px
+			margin: 25px auto 25px
+			background-color: $main-color
+
+	.sect_header_descr
+		a
+			font-family: RalewayBold, $helvetica
+			font-weight: normal
+			&:hover
+				text-decoration: none
+
+.sect_button_container
+	padding: 65px 0 63px 0
+
+
+.section3,
+.section5,
+
+	&::before
+		background: url('img/bah_2.png') repeat-x
+
+	.sect_header
+		color: $text-color-light
+
+	.sect_header_descr
+		color: $text-color-light-grey
+
+.section4,
+.section7
+
+	&::before
+		background: url('img/bah_3.png') repeat-x
+
+.section1,
+.section3	
+	.sect_content
+		position: relative
+		height: 900px
+		padding: 25px 0
+
+		.info_items_container
+			position: absolute
+			width: 1px
+			height: 1px
+			left: 50%
+			top: 50%
+
+		.info_item
+			position: absolute
+			width: 255px
+			text-align: center
+	
+			a
+				color: $main-color
+				text-transform: none
+				text-decoration: underline
+				font-size: em(22px, $base-font-size)
+				line-height: (24 / 22)
+				&:hover
+					text-decoration: none
+	
+			p
+				padding-top: 20px
+				color: $text-color-light
+				font-size: em(14px, $base-font-size)
+				line-height: (18 / 14)
+	
+		.info_item_1, 
+		.info_item_8
+			left: 0
+			transform: translate(-50%, 0)
+		.info_item_1
+			top: -390px
+		.info_item_8
+			bottom: -390px
+	
+		.info_item_4,
+		.info_item_5
+			top: -60px
+		.info_item_4
+			left: -520px
+		.info_item_5
+			right: -520px
+	
+		.info_item_2,
+		.info_item_3
+			top: -260px
+	
+		.info_item_6,
+		.info_item_7
+			top: 160px
+	
+		.info_item_2,
+		.info_item_6
+			left: -430px
+	
+		.info_item_3,
+		.info_item_7
+			right: -430px
+
+			

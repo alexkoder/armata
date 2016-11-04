@@ -1,0 +1,73 @@
+@import 'variables'
+
+.section6
+
+	.sect_content
+		padding: 65px 0 57px
+
+		.info_items_container
+			text-align: center
+			perspective: 600px
+
+		.info_item
+			display: inline-block
+			width: 262px
+			height: 348px
+			padding: 60px 20px 20px
+			margin: 0 13px 30px
+			vertical-align: top
+			background-color: $bg-grey	
+			border-bottom: 4px solid $bg-dark-grey
+			opacity: 1
+			transition: all 1s
+
+			&:hover
+				border-bottom-color: $main-color
+				.img_wrap
+					transform: scale(1.11, 1.11)
+
+			&.card-off
+				opacity: 0
+				transform: rotateY(100deg)				
+
+			&:last-child
+				margin-bottom: 0	
+
+			.img_wrap
+				display: block
+				width: 110px
+				height: 110px
+				margin: 0 auto
+				line-height: 110px
+				border-radius: 50%
+				overflow: hidden
+				box-shadow: 0 0 0 5px $bg-dark-grey
+				transition: transform 0.3s
+
+				img
+					max-height: 110px
+					max-width: 110px
+					width: auto;
+					vertical-align: middle
+
+			.s6_name,
+			.s6_phone
+				display: block				
+				font-size: em(16px, $base-font-size)
+				line-height: (36 / 16)
+				color: $text-color-main
+
+			.s6_name
+				font-family: "RalewayBold", $helvetica
+				margin: 32px 0 0 0
+
+			.s6_position
+				display: block				
+				font-size: em(13.1px, $base-font-size)
+				line-height: (18 / 13)
+				color: #6e7b8b
+			
+			.s6_phone
+				font-family: RobotoBold, $helvetica
+				margin-top: 10px
+

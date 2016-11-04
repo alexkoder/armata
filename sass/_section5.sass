@@ -1,0 +1,66 @@
+@import 'variables'
+
+.section5
+
+	.sect_content
+		padding: 50px 0 60px
+
+		.info_items_container
+			text-align: center
+
+		.info_item
+			position: relative
+			display: inline-block
+			width: 292px
+			height: 132px
+			margin-left: -45px
+			margin-bottom: 15px
+			cursor: default
+			transition: transform 0.5s
+
+			&:first-child
+				margin-left: 0	
+
+			&:hover
+				transform: scale(1.1, 1.1)
+				path
+					fill-opacity: 0!important
+					stroke-opacity: 1!important
+
+
+		.info_item_content
+			position: absolute
+			top: 50%
+			transform: translate(0, -50%)
+			left: 60px
+			text-align: left
+			opacity: 0
+
+			&.s5_opacity_on
+				opacity: 1
+
+			.s5_icon
+				display: block
+				float: left
+				max-width: 40px 
+				max-height: 40px
+				width: auto
+
+			.s5_descr
+				display: block
+				width: 200px
+				padding-left: 70px
+				font-family: PFCentroSlabProMedium, $helvetica
+				font-size: 18px 
+				line-height: 20px
+				color: $text-color-light
+
+			.s5_number
+				position: absolute
+				left: 45px
+				font-family: PFCentroSlabProMedium, $helvetica
+				font-size: 22px
+				line-height: 20px
+				color: $text-color-light
+
+

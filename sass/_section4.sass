@@ -1,0 +1,75 @@
+@import 'variables'
+
+.section4
+
+	.sect_content
+		padding: 55px 0 71px
+
+		.sect_content_header
+			color: $text-color-dark-blue
+			text-align: center
+			margin-bottom: 51px
+			line-height: (36 / 24)
+
+		.info_items_container
+			text-align: center
+			perspective: 600px
+
+		.info_item
+			display: inline-block
+			width: 262px
+			height: 375px
+			padding: 56px 25px 50px
+			margin: 0 13px 30px
+			vertical-align: top
+			background-color: $bg-dark
+			border-bottom: 4px solid #1A222B
+			opacity: 1
+			transition: all 1s
+
+			&:hover
+				border-bottom-color: $main-color
+				.img_wrap
+					transform: scale(1.08, 1.08)
+
+			&.card-off
+				opacity: 0
+				transform: rotateY(100deg)				
+
+			&:last-child
+				margin-bottom: 0	
+
+			.img_wrap
+				display: block
+				width: 120px
+				height: 120px
+				margin: 0 auto
+				line-height: 120px
+				background-color: $main-color
+				border-radius: 50%
+				transition: transform 0.3s
+
+				img
+					max-height: 70px
+					max-width: 80px
+					width: auto;
+					vertical-align: middle
+
+			.title
+				display: block
+				margin: 30px 0 11px
+				font-family: RalewayBold, $helvetica
+				font-size: em(16px, $base-font-size)
+				line-height: (36 / 16)
+				color: $text-color-light-grey
+				text-transform: uppercase
+
+			.descr
+				display: block				
+				font-size: em(14.1px, $base-font-size)
+				line-height: (18 / 14)
+				color: $text-color-blue
+
+				.percent
+					font-family: RalewayBold, $helvetica
+					color: $main-color
